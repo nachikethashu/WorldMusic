@@ -1,0 +1,255 @@
+body {
+    font-size:100%;
+}
+.mainDiv {
+    position: absolute;
+    // top: 10%;
+    //left: 40%;
+    height: 90%;
+    width: 415px;
+    border-radius: 2%;
+    border: 1px solid grey;
+}
+@font-face{
+    font-family: Muli;
+    src: url('assets/Muli/Muli-Regular.ttf');
+}
+.header {
+    /*embossed*/
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    color: grey;
+    //opacity: 0.3;
+    font: 80px'Museo700';
+    text-transform: uppercase;
+    text-align:center;
+}
+.show-scrim.genre-disp:after{
+    content:'Loading ..';
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    z-index: 1;
+    /*background-color: gray;*/
+    background: rgba(204, 204, 204, 0.5) /*url('assets/spinner-light.gif') no-repeat center*/;
+    /*opacity: 0.5;*/
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    border-radius: 50%;
+    -webkit-animation: scrim-effect 2s infinite linear forwards;
+}
+@-webkit-keyframes scrim-effect {
+    0% {
+        background: rgba(204, 204, 204, 0.5);
+    }
+    /*25% {
+        background: rgba(51, 102, 153, 0.5);
+    }*/
+    50% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+/*    75% {
+        background: rgba(204, 204, 153, 0.5);
+    }*/
+    100% {
+        background: rgba(204, 204, 204, 0.5);
+    }
+}
+/*https://www.iconfinder.com/search/?q=iconset%3Apittogrammi*/
+ .random {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background: url(images/radio.png) no-repeat center;
+    opacity: 0.85;
+}
+.artist {
+    background: url(images/artists.png) no-repeat center;
+    opacity: 0.85;
+}
+.genre {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background: url(images/tag.png) no-repeat center;
+    opacity: 0.85;
+}
+.custom {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    background: url(images/custom.png) no-repeat center;
+    //background-size: 65%;
+    opacity: 0.85;
+}
+.genre:hover, .custom:hover, .artist:hover, .random:hover {
+    background-color: silver;
+}
+.header:hover {
+    color: silver;
+}
+.random:active, .artist:active, .genre:active, .custom:active {
+    //-webkit-filter: drop-shadow(5px 10px 20px black) sepia(0.5);
+    background-color: silver;
+}
+.block1:active, .block2:active {
+    -webkit-filter: drop-shadow(5px 10px 20px black);
+}
+.block1 {
+    position: relative;
+    display: inline-block;
+    left: 5%;
+    top: 15%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 25%;
+    height: 13%;
+    /*border: 1px solid silver;*/
+    border-radius: 5%;
+    background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #dbdbdb));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#dbdbdb');
+    border: 1px solid #fff;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    /*border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;*/
+}
+.block2 {
+    position: relative;
+    display: inline-block;
+    left: 5%;
+    top: 15%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 50%;
+    height: 13%;
+    /*border: 1px solid silver;*/
+    border-radius: 5%;
+    background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #dbdbdb));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#dbdbdb');
+    border: 1px solid #fff;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+.blockHeader {
+    //text-shadow:-2px 1px 0 #08C;
+    font-weight:normal;
+    color:#1F1D1B;
+    //letter-spacing:1pt;
+    font-size:200%;
+    text-align:center;
+    line-height: 250%;
+    font-family: 'Muli', sans-serif;
+    //word-wrap: break-word;
+    vertical-align: middle;
+    background: white;
+    border-radius: 10em;
+    border-color: black;
+}
+.blockHeader:active{
+    background-color: black;
+    color: white;
+}
+.genre-disp{
+    box-shadow: inset 0 0 169px rgba(0, 0, 0, 0.3);
+}
+.cloudPlayer {
+    top: 5%;
+    border: 5px solid grey;
+}
+.playerControl {
+    position: relative;
+    top: 5%;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 5%;
+}
+.PlayPause {
+    background: url(images/eye.png) no-repeat center;
+    opacity: 0.85;
+    background-size: 15%;
+}
+.Prev {
+    background: url(images/back.png) no-repeat center;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    opacity: 0.85;
+    background-size: 40%;
+    //border: 1px solid silver;
+    box-sizing: border-box;
+    background-color: orangered;
+}
+.Next {
+    background: url(images/back.png) no-repeat center;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    opacity: 0.85;
+    background-size: 40%;
+    //border: 1px solid silver;
+    box-sizing: border-box;
+    -webkit-transform: scaleX(-1);
+    background-color: orangered;
+}
+.Volume {
+    //background: url(images/back.png) no-repeat center;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    opacity: 0.85;
+    background-size: 40%;
+}
+
+.searchIp{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+    border: 1px solid black;
+}
+.searchIp2{
+    position: relative;
+
+    width: 90%;
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+.selectText{
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    font-family: 'Muli', sans-serif;
+}
+
+.Picker{
+    position: absolute;
+    left: 25%;
+    width: 52%;
+    height: 6%;
+    top: 50%;
+    font-family: 'Muli', sans-serif;
+}
+
+.SearchBtn{
+    position: absolute;
+    left: 25%;
+    width: 52%;
+    height: 10%;
+    top: 60%;
+    font-family: 'Muli', sans-serif;
+    background-color: gainsboro;
+    border: 1px solid grey;
+}

@@ -1,0 +1,10 @@
+1.Raghu Dixit:
+	resolve: https://api.soundcloud.com/users/1710745.json?consumer_key=apigee
+	tracks: https://api.soundcloud.com/users/1710745/tracks.json?consumer_key=apigee
+	id: 1710745
+
+searching: https://api.soundcloud.com/resolve.json?consumer_key=apigee&url=https://soundcloud.com/johnlegend
+https://api.soundcloud.com/resolve.json?consumer_key=apigee&url=https://soundcloud.com/awolnation
+https://api.soundcloud.com/resolve.json?consumer_key=apigee&url=https://soundcloud.com/britneyspears
+https://api.soundcloud.com/resolve.json?consumer_key=apigee&url=https://soundcloud.com/bigsean-1
+https://api.soundcloud.com/resolve.json?consumer_key=apigee&url=https://soundcloud.com/american-authors

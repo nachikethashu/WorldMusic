@@ -1,0 +1,73 @@
+.list-sample-around {
+	//background: url(assets/bg.png);
+    height: 100%;
+    width: 100%;
+}
+/* item */
+.list-sample-around-item {
+	height: 30%;
+	//border-top: 1px solid silver;
+	padding: 12px 16px;
+	border-radius: 5%;
+    background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #dbdbdb));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#dbdbdb');
+    //border: 1px solid #fff;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+.list-sample-around-item-selected {
+	background: #226B9A url(assets/item-hilite.png) repeat-x bottom;
+}
+.list-sample-around-item > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.list-sample-around-avatar {
+    width: 64px;
+    height: 64px;
+	padding-right: 10px;
+    border-radius: 15%;
+}
+.list-sample-around-name {
+    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: chocolate;      /*darkred, firebrick, indianred*/
+}
+.list-sample-around-description {
+	font-size: 12px;
+	color: grey;
+}
+.list-sample-around-remove-button {
+	float: right;
+	display: none;
+}
+/* divider */
+.list-sample-around-divider {
+    /*background-color: #666;*/
+    font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	background-color: white;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 8px 16px;
+    color: grey;
+}
+/* popup */
+.list-sample-around-popup {
+	width: 280px;
+}
+.list-sample-around-popup > * {
+	display: block;
+	margin: 10px 10px;
+}
+.list-sample-around-populate-button {
+	float: right;
+	margin-top: 25px;
+}
+.list-sample-around-label {
+	display: inline-block;
+	width: 120px;
+	padding-right: 10px;
+}
