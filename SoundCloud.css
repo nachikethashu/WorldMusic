@@ -253,3 +253,19 @@ body {
     background-color: gainsboro;
     border: 1px solid grey;
 }
+
+::-webkit-input-placeholder {
+   padding-left: 5%;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   padding-left: 5%;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   padding-left: 5%;
+}
+
+:-ms-input-placeholder {
+   padding-left: 5%;
+}

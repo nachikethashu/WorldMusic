@@ -6,3 +6,6 @@ enyo: "2.4.0-pre.2", layout: "2.4.0-pre.2", onyx: "2.4.0-pre.1"
 
 # How to run?
 Run SoundCloud.html to view the app. Layput is designed mainly for mobile.
+
+# Demo
+https://rawgit.com/nachikethashu/WorldMusic/master/SoundCloud.html

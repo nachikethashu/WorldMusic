@@ -211,10 +211,8 @@ enyo.kind({
 		var p = this.createComponent({
 			name: "CustomDisp",
 			components:[
-				{kind: "onyx.InputDecorator", classes: "searchIp", components: [
-					{name: "searchQuery", kind: "onyx.Input", placeholder: "Search term", onchange:"inputChanged", classes: "searchIp2"},
-					{kind: "Image", src: "assets/search-input-search.png", style :"position: relative; right: 5%", ontap: "getSearchRes"}
-				]},
+				{name: "searchQuery", kind: "Input", placeholder: "What do you want to listen!?",
+					onchange:"inputChanged", classes: "Picker", style: "top: 35%"},
 				{content: "Select the search criteria", classes: "selectText"},
 				{name:"order", kind:"enyo.Select", classes: "Picker", onchange:"selectionChanged", components:[
 					{content:"Hotness",value: "hotness"},
